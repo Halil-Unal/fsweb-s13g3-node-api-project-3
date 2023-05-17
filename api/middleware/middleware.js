@@ -27,7 +27,7 @@ function validateUser(req, res, next) {
   if (!name) {
     res.status(400).json({ mesaj: "gerekli name alanı eksik" });
   } else {
-    req.name = name;
+    
     next();
   }
 }
